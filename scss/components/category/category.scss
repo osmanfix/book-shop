@@ -1,0 +1,33 @@
+.category {
+    width: 416px;
+    height: 710px;
+    background: #EFEEF6;  
+    font-family: 'Montserrat';
+}
+.categoryBooks {
+    margin-left: 160px; 
+    list-style: none;
+    @extend %styleTextCategoryBlock;
+}
+.categoryBooksList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 45px;
+    height: 590px;  
+    @extend %styleTextCategoryBlock;
+    
+    & :hover {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1C2A39;
+        list-style-type: disc;
+    }
+
+        & > .categoryBooksLink {
+            text-decoration: none;
+           
+        }
+
+}
